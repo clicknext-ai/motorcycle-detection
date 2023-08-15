@@ -25,7 +25,7 @@ def detect_motorcycle(frame):
     """ Detect motorcycle from image frame """
     
     # Detect motorcycle from image frame
-    # All classes: https://gist.github.com/AruniRC/7b3dadd004da04c80198557db5da4bda
+    # All classes: https://github.com/clicknext-ai/motorcycle-detection/blob/main/classes.txt
     consider_classes = [0, 3] # 0: person, 3: motorcycle
     confidence_threshold = 0.5
     results = model.predict(frame, conf=confidence_threshold, classes=consider_classes)
